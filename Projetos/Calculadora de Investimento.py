@@ -3,9 +3,13 @@
 
 # In[18]:
 
+# C -> Capital
+# I -> CDI
+# t -> Taxa
+
 
 C = float(input('Informe o valor a ser investido: R$ '))
-I = float(input('Informe a taxa de CDI atualmente ( sem % por favor ): '))
+I = float(input('Informe o CDI atualmente ( sem % por favor ): '))
 
 
 t = 100 + I
