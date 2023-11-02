@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_80b42ca01a4c01360e6589eb58fcdd13 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/leaflet.markercluster.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/1.1.0/MarkerCluster.Default.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_80b42ca01a4c01360e6589eb58fcdd13" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_80b42ca01a4c01360e6589eb58fcdd13 = L.map(
+                "map_80b42ca01a4c01360e6589eb58fcdd13",
+                {
+                    center: [40.7128, -74.006],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b558c790c40a09c9d518394fd772a3df = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_80b42ca01a4c01360e6589eb58fcdd13);
+        
+    
+            var marker_cluster_39cc7f9f8e1c30600a8519e7ae74d7fa = L.markerClusterGroup(
+                {}
+            );
+            map_80b42ca01a4c01360e6589eb58fcdd13.addLayer(marker_cluster_39cc7f9f8e1c30600a8519e7ae74d7fa);
+        
+    
+            var marker_6ccf713d340157486be22f147414c635 = L.marker(
+                [40.84831745142857, -73.88388079999999],
+                {}
+            ).addTo(marker_cluster_39cc7f9f8e1c30600a8519e7ae74d7fa);
+        
+    
+            var icon_b31df2a5ea47998479095bcc2c74e4b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_6ccf713d340157486be22f147414c635.setIcon(icon_b31df2a5ea47998479095bcc2c74e4b1);
+        
+    
+            marker_6ccf713d340157486be22f147414c635.bindTooltip(
+                `<div>
+                     Região: Bronx<br>Preço Médio: $79.56
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_c9cd5f9dbd1e3123787de1b6fdb840f3 = L.marker(
+                [40.68479620840684, -73.95102825171848],
+                {}
+            ).addTo(marker_cluster_39cc7f9f8e1c30600a8519e7ae74d7fa);
+        
+    
+            var icon_c7cf60e89c83fce10ca8a5694d517fe8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_c9cd5f9dbd1e3123787de1b6fdb840f3.setIcon(icon_c7cf60e89c83fce10ca8a5694d517fe8);
+        
+    
+            marker_c9cd5f9dbd1e3123787de1b6fdb840f3.bindTooltip(
+                `<div>
+                     Região: Brooklyn<br>Preço Médio: $121.46
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_bf42c9e1f9a64c6e6d18473b0d916364 = L.marker(
+                [40.76597459238313, -73.97389798568076],
+                {}
+            ).addTo(marker_cluster_39cc7f9f8e1c30600a8519e7ae74d7fa);
+        
+    
+            var icon_ebd9d69d56555973244d7de5cb086ddb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_bf42c9e1f9a64c6e6d18473b0d916364.setIcon(icon_ebd9d69d56555973244d7de5cb086ddb);
+        
+    
+            marker_bf42c9e1f9a64c6e6d18473b0d916364.bindTooltip(
+                `<div>
+                     Região: Manhattan<br>Preço Médio: $180.07
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_0ea1a5d96c671cae86230cdb4812232c = L.marker(
+                [40.73138133858267, -73.8711989720035],
+                {}
+            ).addTo(marker_cluster_39cc7f9f8e1c30600a8519e7ae74d7fa);
+        
+    
+            var icon_6255e2744a9c4c8ea88e17aaae61c515 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_0ea1a5d96c671cae86230cdb4812232c.setIcon(icon_6255e2744a9c4c8ea88e17aaae61c515);
+        
+    
+            marker_0ea1a5d96c671cae86230cdb4812232c.bindTooltip(
+                `<div>
+                     Região: Queens<br>Preço Médio: $95.78
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_249bc87af18444bef4d0a18cf1cef00d = L.marker(
+                [40.61120687898089, -74.1048376433121],
+                {}
+            ).addTo(marker_cluster_39cc7f9f8e1c30600a8519e7ae74d7fa);
+        
+    
+            var icon_9de2881967daa89e67eb40ad48f66779 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_249bc87af18444bef4d0a18cf1cef00d.setIcon(icon_9de2881967daa89e67eb40ad48f66779);
+        
+    
+            marker_249bc87af18444bef4d0a18cf1cef00d.bindTooltip(
+                `<div>
+                     Região: Staten Island<br>Preço Médio: $89.96
+                 </div>`,
+                {"sticky": true}
+            );
+        
+</script>
+</html>

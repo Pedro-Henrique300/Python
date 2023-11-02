@@ -1,0 +1,1 @@
+Analisando os dados de uma empresa que queria descobrir o porque de seus clientes estarem cancelando seus planos, com base na analise foi descoberto que: os clientes sempre cancelavam o plano mensal, que se tiver um atraso maior de 20 dias cancelam e se a pessoa tiver que ligar 5 vezes ou mais para resolver, provavelmente ira cancelar.
